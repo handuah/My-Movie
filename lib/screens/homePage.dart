@@ -110,8 +110,95 @@ class _HomePageState extends State<HomePage> {
               ),
             ],
           ),
+          SizedBox(
+            height: screenHeight * 0.02,
+          ),
+          Container(
+            height: screenHeight * 0.2,
+            width: screenWidth,
+            // color: Colors.red,
+            child: ListView(
+              padding: EdgeInsets.symmetric(
+                horizontal: screenWidth * 0.02,
+              ),
+              scrollDirection: Axis.horizontal,
+              children: [
+                CategoryList('Movies', 'assets/movies.PNG'),
+                SizedBox(
+                  width: screenWidth * 0.03,
+                ),
+                CategoryList('Theatre', 'assets/theatre.PNG'),
+                SizedBox(
+                  width: screenWidth * 0.03,
+                ),
+                CategoryList('Screens', 'assets/screens.PNG'),
+                SizedBox(
+                  width: screenWidth * 0.03,
+                ),
+                CategoryList('Coupons', 'assets/coupon.PNG'),
+                SizedBox(
+                  width: screenWidth * 0.03,
+                ),
+                CategoryList('Gift', 'assets/gift.PNG'),
+              ],
+            ),
+          ),
         ],
       ),
+    );
+  }
+}
+
+// CATEGORIES LIST
+class CategoryList extends StatefulWidget {
+  // const CategoryList({ Key? key }) : super(key: key);
+  final String categoryName;
+  final String imagePath;
+
+  const CategoryList(this.categoryName, this.imagePath);
+  @override
+  _CategoryListState createState() => _CategoryListState();
+}
+
+class _CategoryListState extends State<CategoryList> {
+  @override
+  Widget build(BuildContext context) {
+    double screenHeight = MediaQuery.of(context).size.height;
+    double screenWidth = MediaQuery.of(context).size.width;
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.center,
+      children: [
+        Container(
+          height: screenHeight * 0.1,
+          width: screenWidth * 0.2,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(20.0),
+            color: HexColor('#ffffff'),
+            image: DecorationImage(
+              alignment: Alignment.center,
+              image: AssetImage(widget.imagePath),
+              // image: AssetImage('assets/movies.PNG'),
+              fit: BoxFit.fill,
+            ),
+          ),
+        ),
+        SizedBox(
+          height: screenHeight * 0.02,
+        ),
+        Text(
+          // "Movies",
+          widget.categoryName,
+          textAlign: TextAlign.center,
+          style: GoogleFonts.oxygen(
+            textStyle: TextStyle(
+              color: HexColor("#ffffff"),
+              fontSize: 16.0,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+        ),
+      ],
     );
   }
 }
