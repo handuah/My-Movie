@@ -17,6 +17,82 @@ class _HomePageState extends State<HomePage> {
     double screenWidth = MediaQuery.of(context).size.width;
     return Scaffold(
       backgroundColor: HexColor('#121212'),
+      extendBody: true,
+      bottomNavigationBar: ClipRRect(
+        borderRadius: BorderRadius.only(
+          topLeft: Radius.circular(
+            40.0,
+          ),
+          topRight: Radius.circular(
+            40.0,
+          ),
+        ),
+        child: BottomNavigationBar(
+          elevation: 4.0,
+          type: BottomNavigationBarType.fixed,
+          // currentIndex: _selectedIndex,
+          // onTap: _onTappedItem,
+          backgroundColor: HexColor("#1D2031"),
+          items: [
+            BottomNavigationBarItem(
+              // backgroundColor: Colors.red,
+              icon: Icon(
+                Icons.home_outlined,
+                color: HexColor('#7D818C'),
+                size: 26.0,
+              ),
+              label: '',
+              // title: Text('Dashboard'),
+              activeIcon: Icon(
+                Icons.home,
+                color: HexColor('#FFC933'),
+                size: 26.0,
+              ),
+            ),
+            BottomNavigationBarItem(
+              // backgroundColor: Colors.red,
+              icon: FaIcon(
+                FontAwesomeIcons.ticketAlt,
+                color: HexColor('#7D818C'),
+              ),
+              label: '',
+              // title: Text('Dashboard'),
+              activeIcon: FaIcon(
+                FontAwesomeIcons.ticketAlt,
+                color: HexColor('#FFC933'),
+              ),
+            ),
+            BottomNavigationBarItem(
+              // backgroundColor: Colors.red,
+              icon: FaIcon(
+                FontAwesomeIcons.qrcode,
+                color: HexColor('#7D818C'),
+              ),
+              label: '',
+              // title: Text('Dashboard'),
+              activeIcon: FaIcon(
+                FontAwesomeIcons.qrcode,
+                color: HexColor('#FFC933'),
+              ),
+            ),
+            BottomNavigationBarItem(
+              // backgroundColor: Colors.red,
+              icon: Icon(
+                Icons.person_outline,
+                color: HexColor('#7D818C'),
+                size: 26.0,
+              ),
+              label: '',
+              // title: Text('Dashboard'),
+              activeIcon: Icon(
+                Icons.person,
+                color: HexColor('#FFC933'),
+                size: 26.0,
+              ),
+            ),
+          ],
+        ),
+      ),
       body: ListView(
         padding: EdgeInsets.only(
           left: screenWidth * 0.04,
