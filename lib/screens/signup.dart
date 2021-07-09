@@ -187,7 +187,9 @@ class _SignUpState extends State<SignUp> {
                       width: screenWidth,
                       height: screenHeight * 0.06,
                       child: TextButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.pushNamed(context, '/homepage');
+                        },
                         child: Text(
                           "Sign Up",
                           style: GoogleFonts.oxygen(
