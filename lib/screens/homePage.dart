@@ -319,6 +319,9 @@ class _HomePageState extends State<HomePage> {
             'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKHdk2KqF5inh1mk55DuBTKWlpSvaMZvJTmw&usqp=CAU',
             'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/731449f0-8ab0-4a47-872e-2d16d0faf918/d77pexl-66c6f770-4b6b-48c2-9d06-67b69faee590.jpg/v1/fill/w_1024,h_1449,q_75,strp/daredevil_netflix_poster_by_mrpacinohead_d77pexl-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTQ0OSIsInBhdGgiOiJcL2ZcLzczMTQ0OWYwLThhYjAtNGE0Ny04NzJlLTJkMTZkMGZhZjkxOFwvZDc3cGV4bC02NmM2Zjc3MC00YjZiLTQ4YzItOWQwNi02N2I2OWZhZWU1OTAuanBnIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.bxBIi_I1euhP9TZq2TFaNpjteykpKS8vqANnPKKN3Ns',
           ),
+          SizedBox(
+            height: screenHeight * 0.1,
+          ),
         ],
       ),
     );
