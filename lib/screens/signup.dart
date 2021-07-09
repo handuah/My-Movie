@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class SignUp extends StatefulWidget {
   // const SignUp({ Key? key }) : super(key: key);
@@ -231,6 +232,54 @@ class _SignUpState extends State<SignUp> {
                           height: screenHeight * 0.002,
                           width: screenWidth * 0.3,
                           color: Colors.grey,
+                        ),
+                      ],
+                    ),
+                    SizedBox(
+                      height: screenHeight * 0.03,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Material(
+                          color: HexColor('#2C292E'),
+                          borderRadius: BorderRadius.circular(50.0),
+                          elevation: 2.0,
+                          child: IconButton(
+                            icon: FaIcon(
+                              FontAwesomeIcons.google,
+                              color: HexColor('#FFC933'),
+                              size: 16.0,
+                            ),
+                            onPressed: () {},
+                          ),
+                        ),
+                        Material(
+                          color: HexColor('#2C292E'),
+                          borderRadius: BorderRadius.circular(50.0),
+                          elevation: 2.0,
+                          child: IconButton(
+                            icon: FaIcon(
+                              FontAwesomeIcons.twitter,
+                              color: HexColor('#FFC933'),
+                              size: 16.0,
+                            ),
+                            onPressed: () {},
+                          ),
+                        ),
+                        Material(
+                          color: HexColor('#2C292E'),
+                          borderRadius: BorderRadius.circular(50.0),
+                          elevation: 2.0,
+                          child: IconButton(
+                            icon: FaIcon(
+                              FontAwesomeIcons.facebookF,
+                              color: HexColor('#FFC933'),
+                              size: 16.0,
+                            ),
+                            onPressed: () {},
+                          ),
                         ),
                       ],
                     ),
