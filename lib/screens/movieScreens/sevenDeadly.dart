@@ -289,6 +289,85 @@ class _SevenDeadlySinsState extends State<SevenDeadlySins> {
                           ),
                         ],
                       ),
+                      SizedBox(
+                        height: screenHeight * 0.03,
+                      ),
+                      Container(
+                        height: screenHeight * 0.4,
+                        width: screenWidth,
+                        // color: Colors.red,
+                        child: TabBarView(
+                          children: [
+                            Text(
+                              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                              textAlign: TextAlign.left,
+                              softWrap: true,
+                              style: GoogleFonts.oxygen(
+                                textStyle: TextStyle(
+                                  color: HexColor("#ffffff"),
+                                  fontSize: 16.0,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ),
+                            Text(
+                              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                              textAlign: TextAlign.left,
+                              softWrap: true,
+                              style: GoogleFonts.oxygen(
+                                textStyle: TextStyle(
+                                  color: HexColor("#ffffff"),
+                                  fontSize: 16.0,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ),
+                            Text(
+                              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                              textAlign: TextAlign.left,
+                              softWrap: true,
+                              style: GoogleFonts.oxygen(
+                                textStyle: TextStyle(
+                                  color: HexColor("#ffffff"),
+                                  fontSize: 16.0,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        height: screenHeight * 0.03,
+                      ),
+                      Padding(
+                        padding: EdgeInsets.symmetric(
+                          horizontal: screenWidth * 0.04,
+                        ),
+                        child: SizedBox(
+                          height: screenHeight * 0.06,
+                          child: TextButton(
+                            onPressed: () {},
+                            child: Text(
+                              "Book Your Show",
+                              textAlign: TextAlign.left,
+                              style: GoogleFonts.oxygen(
+                                textStyle: TextStyle(
+                                  color: HexColor("#121212"),
+                                  fontSize: 16.0,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ),
+                            style: TextButton.styleFrom(
+                              backgroundColor: HexColor('#FFC933'),
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(10.0),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
                     ],
                   ),
                 ),
