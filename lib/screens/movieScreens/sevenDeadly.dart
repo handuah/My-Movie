@@ -33,7 +33,7 @@ class _SevenDeadlySinsState extends State<SevenDeadlySins> {
               children: [
                 Image(
                   image: NetworkImage(
-                      'https://lh3.googleusercontent.com/proxy/Ma4IYgliU9RPb2Zwl1haTkbmRnpkuRswhmvS7JTnCnwizWKFJ_ExoK4CiPm9qYAwmglQpaIRt7uKlkbd07H48QZqTuXTwXCAkzZXf4hAmn0na6qp-l1azsNVz7itSbifN6hXfopOs9dmu1AH79zBqMVRlfJdzlQlgER8RFs'),
+                      'https://qph.fs.quoracdn.net/main-qimg-d64cdb7b9853f522e5f75d3789c98e7a'),
                   fit: BoxFit.cover,
                   height: screenHeight / 2.4,
                   width: screenWidth,
@@ -84,7 +84,9 @@ class _SevenDeadlySinsState extends State<SevenDeadlySins> {
                       ),
                       Center(
                         child: IconButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.pushNamed(context, '/sevenDeadlyPlayer');
+                          },
                           icon: FaIcon(
                             FontAwesomeIcons.playCircle,
                             color: Colors.white,
