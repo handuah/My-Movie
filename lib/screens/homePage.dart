@@ -442,57 +442,72 @@ class _UpcomingMovieCardState extends State<UpcomingMovieCard> {
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        Container(
-          width: screenWidth * 0.28,
-          height: screenHeight * 0.20,
-          decoration: BoxDecoration(
-            color: Colors.yellow,
-            borderRadius: BorderRadius.circular(10.0),
-            image: DecorationImage(
-              image: NetworkImage(
-                // 'https://hype.my/wp-content/uploads/2020/08/Stranger_2-P1-e1597139208813.jpg',
-                widget.imagePath1,
+        GestureDetector(
+          onTap: () {
+            Navigator.pushNamed(context, '/sevenDeadlySins');
+          },
+          child: Container(
+            width: screenWidth * 0.28,
+            height: screenHeight * 0.20,
+            decoration: BoxDecoration(
+              color: Colors.yellow,
+              borderRadius: BorderRadius.circular(10.0),
+              image: DecorationImage(
+                image: NetworkImage(
+                  // 'https://hype.my/wp-content/uploads/2020/08/Stranger_2-P1-e1597139208813.jpg',
+                  widget.imagePath1,
+                ),
+                fit: BoxFit.cover,
+                alignment: Alignment.center,
               ),
-              fit: BoxFit.cover,
-              alignment: Alignment.center,
             ),
           ),
         ),
         SizedBox(
           width: screenWidth * 0.02,
         ),
-        Container(
-          width: screenWidth * 0.28,
-          height: screenHeight * 0.20,
-          decoration: BoxDecoration(
-            color: Colors.yellow,
-            borderRadius: BorderRadius.circular(10.0),
-            image: DecorationImage(
-              image: NetworkImage(
-                // 'https://hype.my/wp-content/uploads/2020/08/Stranger_2-P1-e1597139208813.jpg',
-                widget.imagePath2,
+        GestureDetector(
+          onTap: () {
+            Navigator.pushNamed(context, '/sevenDeadlySins');
+          },
+          child: Container(
+            width: screenWidth * 0.28,
+            height: screenHeight * 0.20,
+            decoration: BoxDecoration(
+              color: Colors.yellow,
+              borderRadius: BorderRadius.circular(10.0),
+              image: DecorationImage(
+                image: NetworkImage(
+                  // 'https://hype.my/wp-content/uploads/2020/08/Stranger_2-P1-e1597139208813.jpg',
+                  widget.imagePath2,
+                ),
+                fit: BoxFit.cover,
+                alignment: Alignment.center,
               ),
-              fit: BoxFit.cover,
-              alignment: Alignment.center,
             ),
           ),
         ),
         SizedBox(
           width: screenWidth * 0.02,
         ),
-        Container(
-          width: screenWidth * 0.28,
-          height: screenHeight * 0.20,
-          decoration: BoxDecoration(
-            color: Colors.yellow,
-            borderRadius: BorderRadius.circular(10.0),
-            image: DecorationImage(
-              image: NetworkImage(
-                // 'https://hype.my/wp-content/uploads/2020/08/Stranger_2-P1-e1597139208813.jpg',
-                widget.imagePath3,
+        GestureDetector(
+          onTap: () {
+            Navigator.pushNamed(context, '/sevenDeadlySins');
+          },
+          child: Container(
+            width: screenWidth * 0.28,
+            height: screenHeight * 0.20,
+            decoration: BoxDecoration(
+              color: Colors.yellow,
+              borderRadius: BorderRadius.circular(10.0),
+              image: DecorationImage(
+                image: NetworkImage(
+                  // 'https://hype.my/wp-content/uploads/2020/08/Stranger_2-P1-e1597139208813.jpg',
+                  widget.imagePath3,
+                ),
+                fit: BoxFit.cover,
+                alignment: Alignment.center,
               ),
-              fit: BoxFit.cover,
-              alignment: Alignment.center,
             ),
           ),
         ),
