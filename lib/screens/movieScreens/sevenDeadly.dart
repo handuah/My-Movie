@@ -13,6 +13,7 @@ class SevenDeadlySins extends StatefulWidget {
 class _SevenDeadlySinsState extends State<SevenDeadlySins> {
   @override
   Widget build(BuildContext context) {
+    //setting to fullscreen
     double screenHeight = MediaQuery.of(context).size.height;
     double screenWidth = MediaQuery.of(context).size.width;
     return Scaffold(
@@ -37,11 +38,59 @@ class _SevenDeadlySinsState extends State<SevenDeadlySins> {
                   height: screenHeight / 2.6,
                   width: screenWidth,
                 ),
+                Padding(
+                  padding: EdgeInsets.only(
+                    top: screenHeight * 0.064,
+                    left: screenWidth * 0.02,
+                    right: screenWidth * 0.02,
+                  ),
+                  child: Column(
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          IconButton(
+                            icon: FaIcon(
+                              FontAwesomeIcons.chevronLeft,
+                              color: Colors.white,
+                            ),
+                            onPressed: () {
+                              Navigator.pop(context);
+                            },
+                          ),
+                          IconButton(
+                            icon: FaIcon(
+                              FontAwesomeIcons.ellipsisV,
+                              color: Colors.white,
+                            ),
+                            onPressed: () {
+                              Navigator.pop(context);
+                            },
+                          ),
+                        ],
+                      ),
+                      SizedBox(
+                        height: screenHeight * 0.04,
+                      ),
+                      Center(
+                        child: IconButton(
+                          onPressed: () {},
+                          icon: FaIcon(
+                            FontAwesomeIcons.play,
+                            color: Colors.white,
+                            size: 30.0,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
               ],
             ),
           ),
           Positioned(
-            top: screenHeight / 2.8,
+            top: screenHeight / 2.6,
             child: Container(
               alignment: Alignment.topLeft,
               height: screenHeight / 1.4,
