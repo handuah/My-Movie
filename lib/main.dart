@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:my_movie/screens/homePage.dart';
 import 'package:my_movie/screens/login.dart';
 import 'package:my_movie/screens/movieScreens/sevenDeadly.dart';
@@ -9,6 +10,7 @@ import 'package:my_movie/screens/signup.dart';
 import 'package:my_movie/screens/startPage.dart';
 
 void main() {
+  SystemChrome.setEnabledSystemUIOverlays(SystemUiOverlay.values);
   runApp(MyMovie());
 }
 
