@@ -35,8 +35,17 @@ class _SevenDeadlySinsState extends State<SevenDeadlySins> {
                   image: NetworkImage(
                       'https://lh3.googleusercontent.com/proxy/Ma4IYgliU9RPb2Zwl1haTkbmRnpkuRswhmvS7JTnCnwizWKFJ_ExoK4CiPm9qYAwmglQpaIRt7uKlkbd07H48QZqTuXTwXCAkzZXf4hAmn0na6qp-l1azsNVz7itSbifN6hXfopOs9dmu1AH79zBqMVRlfJdzlQlgER8RFs'),
                   fit: BoxFit.cover,
-                  height: screenHeight / 2.6,
+                  height: screenHeight / 2.4,
                   width: screenWidth,
+                ),
+                Opacity(
+                  opacity: 0.5,
+                  child: Container(
+                    alignment: Alignment.topLeft,
+                    height: screenHeight,
+                    width: screenWidth,
+                    color: Colors.black,
+                  ),
                 ),
                 Padding(
                   padding: EdgeInsets.only(
@@ -71,17 +80,140 @@ class _SevenDeadlySinsState extends State<SevenDeadlySins> {
                         ],
                       ),
                       SizedBox(
-                        height: screenHeight * 0.04,
+                        height: screenHeight * 0.03,
                       ),
                       Center(
                         child: IconButton(
                           onPressed: () {},
                           icon: FaIcon(
-                            FontAwesomeIcons.play,
+                            FontAwesomeIcons.playCircle,
                             color: Colors.white,
-                            size: 30.0,
+                            size: 50.0,
                           ),
                         ),
+                      ),
+                      SizedBox(
+                        height: screenHeight * 0.05,
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Column(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "Seven Deadly Sins",
+                                textAlign: TextAlign.left,
+                                style: GoogleFonts.oxygen(
+                                  textStyle: TextStyle(
+                                    color: HexColor("#ffffff"),
+                                    fontSize: 20.0,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
+                              SizedBox(
+                                height: screenHeight * 0.01,
+                              ),
+                              Text(
+                                "Anime",
+                                textAlign: TextAlign.left,
+                                style: GoogleFonts.oxygen(
+                                  textStyle: TextStyle(
+                                    color: HexColor("#ffffff"),
+                                    fontSize: 14.0,
+                                    fontWeight: FontWeight.normal,
+                                  ),
+                                ),
+                              ),
+                              SizedBox(
+                                height: screenHeight * 0.01,
+                              ),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    "2021",
+                                    textAlign: TextAlign.left,
+                                    style: GoogleFonts.oxygen(
+                                      textStyle: TextStyle(
+                                        color: HexColor("#ffffff"),
+                                        fontSize: 10.0,
+                                        fontWeight: FontWeight.normal,
+                                      ),
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    width: screenWidth * 0.02,
+                                  ),
+                                  Text(
+                                    "2h 30 min",
+                                    textAlign: TextAlign.left,
+                                    style: GoogleFonts.oxygen(
+                                      textStyle: TextStyle(
+                                        color: HexColor("#ffffff"),
+                                        fontSize: 10.0,
+                                        fontWeight: FontWeight.normal,
+                                      ),
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    width: screenWidth * 0.02,
+                                  ),
+                                  Text(
+                                    "Drama",
+                                    textAlign: TextAlign.left,
+                                    style: GoogleFonts.oxygen(
+                                      textStyle: TextStyle(
+                                        color: HexColor("#ffffff"),
+                                        fontSize: 10.0,
+                                        fontWeight: FontWeight.normal,
+                                      ),
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    width: screenWidth * 0.02,
+                                  ),
+                                  Text(
+                                    "16+",
+                                    textAlign: TextAlign.left,
+                                    style: GoogleFonts.oxygen(
+                                      textStyle: TextStyle(
+                                        color: HexColor("#ffffff"),
+                                        fontSize: 10.0,
+                                        fontWeight: FontWeight.normal,
+                                      ),
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    width: screenWidth * 0.02,
+                                  ),
+                                  Text(
+                                    "3.5 stars",
+                                    textAlign: TextAlign.left,
+                                    style: GoogleFonts.oxygen(
+                                      textStyle: TextStyle(
+                                        color: HexColor("#ffffff"),
+                                        fontSize: 10.0,
+                                        fontWeight: FontWeight.normal,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                          IconButton(
+                            icon: FaIcon(
+                              FontAwesomeIcons.heart,
+                              color: Colors.white,
+                            ),
+                            onPressed: () {},
+                          ),
+                        ],
                       ),
                     ],
                   ),
