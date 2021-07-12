@@ -228,10 +228,69 @@ class _SevenDeadlySinsState extends State<SevenDeadlySins> {
               height: screenHeight / 1.4,
               width: screenWidth,
               decoration: BoxDecoration(
-                color: Colors.yellow,
+                color: HexColor('#121421'),
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(20.0),
                   topRight: Radius.circular(20.0),
+                ),
+              ),
+              child: Padding(
+                padding: EdgeInsets.symmetric(
+                  vertical: screenHeight * 0.02,
+                  horizontal: screenWidth * 0.02,
+                ),
+                child: DefaultTabController(
+                  initialIndex: 0,
+                  length: 3,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      TabBar(
+                        labelColor: HexColor('#FFC933'),
+                        unselectedLabelColor: Colors.white,
+                        indicatorColor: HexColor('#FFC933'),
+                        labelPadding: EdgeInsets.symmetric(
+                          vertical: screenHeight * 0.01,
+                        ),
+                        tabs: [
+                          Text(
+                            "Information",
+                            textAlign: TextAlign.left,
+                            style: GoogleFonts.oxygen(
+                              textStyle: TextStyle(
+                                // color: HexColor("#ffffff"),
+                                fontSize: 14.0,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                          Text(
+                            "Cast",
+                            textAlign: TextAlign.left,
+                            style: GoogleFonts.oxygen(
+                              textStyle: TextStyle(
+                                // color: HexColor("#ffffff"),
+                                fontSize: 14.0,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                          Text(
+                            "Reviews",
+                            textAlign: TextAlign.left,
+                            style: GoogleFonts.oxygen(
+                              textStyle: TextStyle(
+                                // color: HexColor("#ffffff"),
+                                fontSize: 14.0,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ),
