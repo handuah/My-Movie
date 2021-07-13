@@ -14,14 +14,16 @@ class SevenDeadlyPlayer extends StatefulWidget {
 class _SevenDeadlyPlayerState extends State<SevenDeadlyPlayer> {
   @override
   Widget build(BuildContext context) {
+    double screenHeight = MediaQuery.of(context).size.height;
+    double screenWidth = MediaQuery.of(context).size.width;
     return Scaffold(
       backgroundColor: HexColor('#121421'),
       body: AspectRatio(
-        aspectRatio: 16 / 9,
+        aspectRatio: screenWidth / screenHeight,
         child: BetterPlayer.network(
           "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
           betterPlayerConfiguration: BetterPlayerConfiguration(
-            aspectRatio: 16 / 9,
+            aspectRatio: screenWidth / screenHeight,
             autoPlay: true,
           ),
         ),
