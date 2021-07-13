@@ -101,6 +101,11 @@ class _LoginState extends State<Login> {
                             color: HexColor("#ffffff"),
                           ),
                         ),
+                        focusedBorder: UnderlineInputBorder(
+                          borderSide: BorderSide(
+                            color: HexColor("#ffffff"),
+                          ),
+                        ),
                       ),
                     ),
                     SizedBox(
@@ -113,6 +118,11 @@ class _LoginState extends State<Login> {
                           color: Colors.white,
                         ),
                         enabledBorder: UnderlineInputBorder(
+                          borderSide: BorderSide(
+                            color: HexColor("#ffffff"),
+                          ),
+                        ),
+                        focusedBorder: UnderlineInputBorder(
                           borderSide: BorderSide(
                             color: HexColor("#ffffff"),
                           ),
