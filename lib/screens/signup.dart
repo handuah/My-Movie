@@ -92,6 +92,9 @@ class _SignUpState extends State<SignUp> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     TextFormField(
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
                       keyboardType: TextInputType.text,
                       decoration: InputDecoration(
                         labelText: 'Full Name',
@@ -115,6 +118,9 @@ class _SignUpState extends State<SignUp> {
                       height: screenHeight * 0.01,
                     ),
                     TextFormField(
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
                       keyboardType: TextInputType.phone,
                       decoration: InputDecoration(
                         labelText: 'Phone Number',
@@ -138,6 +144,9 @@ class _SignUpState extends State<SignUp> {
                       height: screenHeight * 0.01,
                     ),
                     TextFormField(
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
                       keyboardType: TextInputType.emailAddress,
                       decoration: InputDecoration(
                         labelText: 'Email Address',
@@ -161,6 +170,9 @@ class _SignUpState extends State<SignUp> {
                       height: screenHeight * 0.01,
                     ),
                     TextFormField(
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
                       obscureText: true,
                       keyboardType: TextInputType.text,
                       decoration: InputDecoration(
@@ -185,6 +197,9 @@ class _SignUpState extends State<SignUp> {
                       height: screenHeight * 0.01,
                     ),
                     TextFormField(
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
                       obscureText: true,
                       keyboardType: TextInputType.text,
                       decoration: InputDecoration(

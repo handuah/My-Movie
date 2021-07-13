@@ -91,6 +91,9 @@ class _LoginState extends State<Login> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     TextFormField(
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
                       decoration: InputDecoration(
                         labelText: 'User Name',
                         labelStyle: TextStyle(
@@ -112,6 +115,10 @@ class _LoginState extends State<Login> {
                       height: screenHeight * 0.02,
                     ),
                     TextFormField(
+                      obscureText: true,
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
                       decoration: InputDecoration(
                         labelText: 'Password',
                         labelStyle: TextStyle(
