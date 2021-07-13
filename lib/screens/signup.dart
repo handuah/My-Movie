@@ -29,7 +29,7 @@ class _SignUpState extends State<SignUp> {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               SizedBox(
-                height: screenHeight * 0.1,
+                height: screenHeight * 0.07,
               ),
               Icon(
                 Icons.movie,
@@ -68,7 +68,7 @@ class _SignUpState extends State<SignUp> {
                 ],
               ),
               SizedBox(
-                height: screenHeight * 0.04,
+                height: screenHeight * 0.03,
               ),
               Text(
                 "Sign Up",
@@ -104,11 +104,16 @@ class _SignUpState extends State<SignUp> {
                             color: HexColor("#ffffff"),
                           ),
                         ),
+                        focusedBorder: UnderlineInputBorder(
+                          borderSide: BorderSide(
+                            color: HexColor("#ffffff"),
+                          ),
+                        ),
                       ),
                     ),
-                    // SizedBox(
-                    //   height: screenHeight * 0.02,
-                    // ),
+                    SizedBox(
+                      height: screenHeight * 0.01,
+                    ),
                     TextFormField(
                       keyboardType: TextInputType.phone,
                       decoration: InputDecoration(
@@ -122,11 +127,16 @@ class _SignUpState extends State<SignUp> {
                             color: HexColor("#ffffff"),
                           ),
                         ),
+                        focusedBorder: UnderlineInputBorder(
+                          borderSide: BorderSide(
+                            color: HexColor("#ffffff"),
+                          ),
+                        ),
                       ),
                     ),
-                    // SizedBox(
-                    //   height: screenHeight * 0.02,
-                    // ),
+                    SizedBox(
+                      height: screenHeight * 0.01,
+                    ),
                     TextFormField(
                       keyboardType: TextInputType.emailAddress,
                       decoration: InputDecoration(
@@ -140,11 +150,16 @@ class _SignUpState extends State<SignUp> {
                             color: HexColor("#ffffff"),
                           ),
                         ),
+                        focusedBorder: UnderlineInputBorder(
+                          borderSide: BorderSide(
+                            color: HexColor("#ffffff"),
+                          ),
+                        ),
                       ),
                     ),
-                    // SizedBox(
-                    //   height: screenHeight * 0.02,
-                    // ),
+                    SizedBox(
+                      height: screenHeight * 0.01,
+                    ),
                     TextFormField(
                       obscureText: true,
                       keyboardType: TextInputType.text,
@@ -159,11 +174,16 @@ class _SignUpState extends State<SignUp> {
                             color: HexColor("#ffffff"),
                           ),
                         ),
+                        focusedBorder: UnderlineInputBorder(
+                          borderSide: BorderSide(
+                            color: HexColor("#ffffff"),
+                          ),
+                        ),
                       ),
                     ),
-                    // SizedBox(
-                    //   height: screenHeight * 0.01,
-                    // ),
+                    SizedBox(
+                      height: screenHeight * 0.01,
+                    ),
                     TextFormField(
                       obscureText: true,
                       keyboardType: TextInputType.text,
@@ -174,6 +194,11 @@ class _SignUpState extends State<SignUp> {
                           color: Colors.white,
                         ),
                         enabledBorder: UnderlineInputBorder(
+                          borderSide: BorderSide(
+                            color: HexColor("#ffffff"),
+                          ),
+                        ),
+                        focusedBorder: UnderlineInputBorder(
                           borderSide: BorderSide(
                             color: HexColor("#ffffff"),
                           ),
