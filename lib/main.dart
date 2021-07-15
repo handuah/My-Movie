@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:my_movie/screens/homePage.dart';
 import 'package:my_movie/screens/login.dart';
+import 'package:my_movie/screens/movieScreens/chooseSeat.dart';
 import 'package:my_movie/screens/movieScreens/sevenDeadly.dart';
 import 'package:my_movie/screens/movieScreens/sevenDeadlyPlayer.dart';
 import 'package:my_movie/screens/onboardingScreenOne.dart';
@@ -37,6 +38,7 @@ class MyMovie extends StatelessWidget {
         '/homepage': (context) => HomePage(),
         '/sevenDeadlySins': (context) => SevenDeadlySins(),
         '/sevenDeadlyPlayer': (context) => SevenDeadlyPlayer(),
+        '/chooseSeat': (context) => ChooseSeat(),
       },
     );
   }
