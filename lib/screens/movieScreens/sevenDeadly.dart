@@ -349,7 +349,9 @@ class _SevenDeadlySinsState extends State<SevenDeadlySins> {
                         child: SizedBox(
                           height: screenHeight * 0.06,
                           child: TextButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.pushNamed(context, '/chooseSeat');
+                            },
                             child: Text(
                               "Book Your Show",
                               textAlign: TextAlign.left,
