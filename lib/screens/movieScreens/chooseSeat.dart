@@ -60,7 +60,45 @@ class _ChooseSeatState extends State<ChooseSeat> {
               height: screenHeight * 0.2,
               width: screenWidth,
               decoration: BoxDecoration(
-                color: Colors.green,
+                  // color: Colors.green,
+                  ),
+              child: Stack(
+                alignment: Alignment.center,
+                children: [
+                  Padding(
+                    padding: EdgeInsets.symmetric(
+                      vertical: screenHeight * 0.02,
+                      horizontal: screenWidth * 0.02,
+                    ),
+                    child: Opacity(
+                      opacity: 0.5,
+                      child: Container(
+                        height: screenHeight,
+                        width: screenWidth,
+                        decoration: BoxDecoration(
+                          color: HexColor('#1EA7D1'),
+                          borderRadius: BorderRadius.only(
+                            bottomLeft: Radius.circular(500.0),
+                            bottomRight: Radius.circular(500.0),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                  Center(
+                    child: Text(
+                      "Screens",
+                      textAlign: TextAlign.left,
+                      style: GoogleFonts.oxygen(
+                        textStyle: TextStyle(
+                          color: HexColor("#ffffff"),
+                          fontSize: 18.0,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
               ),
             ),
             SizedBox(
