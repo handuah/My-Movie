@@ -71,17 +71,11 @@ class _ChooseSeatState extends State<ChooseSeat> {
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisSize: MainAxisSize.min,
               children: [
-                FaIcon(
-                  FontAwesomeIcons.stop,
-                  color: HexColor('#ffffff'),
-                ),
+                NoSeat(),
                 SizedBox(
                   width: screenWidth * 0.05,
                 ),
-                FaIcon(
-                  FontAwesomeIcons.stop,
-                  color: HexColor('#ffffff'),
-                ),
+                AvailableSeat(),
                 SizedBox(
                   width: screenWidth * 0.05,
                 ),
@@ -120,14 +114,73 @@ class _ChooseSeatState extends State<ChooseSeat> {
                 SizedBox(
                   width: screenWidth * 0.05,
                 ),
-                FaIcon(
-                  FontAwesomeIcons.stop,
-                  color: HexColor('#ffffff'),
-                ),
+                NoSeat(),
               ],
             ),
           ],
         ),
+      ),
+    );
+  }
+}
+
+// RESERVED SEAT
+class ReservedSeat extends StatefulWidget {
+  // const ReservedSeat({ Key? key }) : super(key: key);
+
+  @override
+  _ReservedSeatState createState() => _ReservedSeatState();
+}
+
+class _ReservedSeatState extends State<ReservedSeat> {
+  @override
+  Widget build(BuildContext context) {
+    return FaIcon(
+      FontAwesomeIcons.stop,
+      color: HexColor('#3B3E45'),
+    );
+  }
+}
+
+// NO SEAT
+class NoSeat extends StatefulWidget {
+  // const ReservedSeat({ Key? key }) : super(key: key);
+
+  @override
+  _NoSeatState createState() => _NoSeatState();
+}
+
+class _NoSeatState extends State<NoSeat> {
+  @override
+  Widget build(BuildContext context) {
+    return FaIcon(
+      FontAwesomeIcons.stop,
+      color: HexColor('#121212'),
+    );
+  }
+}
+
+// AVAILABLE SEAT
+class AvailableSeat extends StatefulWidget {
+  // const AvailableSeat({ Key? key }) : super(key: key);
+
+  @override
+  _AvailableSeatState createState() => _AvailableSeatState();
+}
+
+class _AvailableSeatState extends State<AvailableSeat> {
+  bool isAvailable = true;
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: () {
+        setState(() {
+          isAvailable = !isAvailable; //toggling occurs here
+        });
+      },
+      child: FaIcon(
+        FontAwesomeIcons.stop,
+        color: isAvailable ? HexColor('#ffffff') : HexColor('#FFC933'),
       ),
     );
   }
