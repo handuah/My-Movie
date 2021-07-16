@@ -67,73 +67,62 @@ class _ChooseSeatState extends State<ChooseSeat> {
               height: screenHeight * 0.02,
             ),
             Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisSize: MainAxisSize.min,
               children: [
-                IconButton(
-                  icon: FaIcon(
-                    FontAwesomeIcons.stop,
-                    color: HexColor('#ffffff'),
-                  ),
-                  onPressed: () {},
+                FaIcon(
+                  FontAwesomeIcons.stop,
+                  color: HexColor('#ffffff'),
                 ),
-                IconButton(
-                  icon: FaIcon(
-                    FontAwesomeIcons.stop,
-                    color: HexColor('#ffffff'),
-                  ),
-                  onPressed: () {},
+                SizedBox(
+                  width: screenWidth * 0.05,
                 ),
-                IconButton(
-                  icon: FaIcon(
-                    FontAwesomeIcons.stop,
-                    color: HexColor('#ffffff'),
-                  ),
-                  onPressed: () {},
+                FaIcon(
+                  FontAwesomeIcons.stop,
+                  color: HexColor('#ffffff'),
                 ),
-                IconButton(
-                  icon: FaIcon(
-                    FontAwesomeIcons.stop,
-                    color: HexColor('#ffffff'),
-                  ),
-                  onPressed: () {},
+                SizedBox(
+                  width: screenWidth * 0.05,
                 ),
-                IconButton(
-                  icon: FaIcon(
-                    FontAwesomeIcons.stop,
-                    color: HexColor('#ffffff'),
-                  ),
-                  onPressed: () {},
+                FaIcon(
+                  FontAwesomeIcons.stop,
+                  color: HexColor('#ffffff'),
                 ),
-                IconButton(
-                  icon: FaIcon(
-                    // IconButton(
-                    //   icon: FaIcon(
-                    //     FontAwesomeIcons.stop,
-                    //     color: HexColor('#ffffff'),
-                    //   ),
-                    //   onPressed: () {},
-                    // ),
-                    FontAwesomeIcons.stop,
-                    color: HexColor('#ffffff'),
-                  ),
-                  onPressed: () {},
+                SizedBox(
+                  width: screenWidth * 0.05,
                 ),
-                IconButton(
-                  icon: FaIcon(
-                    FontAwesomeIcons.stop,
-                    color: HexColor('#ffffff'),
-                  ),
-                  onPressed: () {},
+                FaIcon(
+                  FontAwesomeIcons.stop,
+                  color: HexColor('#ffffff'),
                 ),
-              ],
-            ),
-            Row(
-              children: [
-                IconButton(
-                  icon: FaIcon(
-                    FontAwesomeIcons.stop,
-                    color: HexColor('#ffffff'),
-                  ),
-                  onPressed: () {},
+                SizedBox(
+                  width: screenWidth * 0.1,
+                ),
+                FaIcon(
+                  FontAwesomeIcons.stop,
+                  color: HexColor('#ffffff'),
+                ),
+                SizedBox(
+                  width: screenWidth * 0.05,
+                ),
+                FaIcon(
+                  FontAwesomeIcons.stop,
+                  color: HexColor('#ffffff'),
+                ),
+                SizedBox(
+                  width: screenWidth * 0.05,
+                ),
+                FaIcon(
+                  FontAwesomeIcons.stop,
+                  color: HexColor('#ffffff'),
+                ),
+                SizedBox(
+                  width: screenWidth * 0.05,
+                ),
+                FaIcon(
+                  FontAwesomeIcons.stop,
+                  color: HexColor('#ffffff'),
                 ),
               ],
             ),
