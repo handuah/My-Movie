@@ -72,8 +72,10 @@ class _ChooseSeatState extends State<ChooseSeat> {
                     ),
                     child: Opacity(
                         opacity: 0.5,
-                        child: RotatedBox(
-                          quarterTurns: 4,
+                        child: Transform(
+                          transform: Matrix4.identity()
+                            // ..setEntry(3, 2, 0.001)
+                            ..rotateX(50),
                           child: Container(
                             height: screenHeight,
                             width: screenWidth,
