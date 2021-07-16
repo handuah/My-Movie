@@ -71,19 +71,21 @@ class _ChooseSeatState extends State<ChooseSeat> {
                       horizontal: screenWidth * 0.02,
                     ),
                     child: Opacity(
-                      opacity: 0.5,
-                      child: Container(
-                        height: screenHeight,
-                        width: screenWidth,
-                        decoration: BoxDecoration(
-                          color: HexColor('#1EA7D1'),
-                          borderRadius: BorderRadius.only(
-                            bottomLeft: Radius.circular(500.0),
-                            bottomRight: Radius.circular(500.0),
+                        opacity: 0.5,
+                        child: RotatedBox(
+                          quarterTurns: 4,
+                          child: Container(
+                            height: screenHeight,
+                            width: screenWidth,
+                            decoration: BoxDecoration(
+                              color: HexColor('#1EA7D1'),
+                              borderRadius: BorderRadius.only(
+                                bottomLeft: Radius.circular(500.0),
+                                bottomRight: Radius.circular(500.0),
+                              ),
+                            ),
                           ),
-                        ),
-                      ),
-                    ),
+                        )),
                   ),
                   Center(
                     child: Text(
